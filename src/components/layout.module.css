@@ -1,0 +1,41 @@
+
+.container {
+    margin: auto;
+    max-width: 700px;
+}
+.heading {
+    color: var(--textLink);
+    font-size: 1.5rem;
+}
+.nav-links {
+    display: flex;
+    padding-left: 0;
+    margin: 0;
+    font-size: 0.9rem;
+    gap: 2rem
+}
+.nav-link-text-active{
+    text-decoration: underline !important;
+}
+.site-title {
+    color: var(--textTitle);
+    font-size: 1.8rem;
+}
+.headerContainer {
+    display: flex;
+    margin: 3rem 0;
+    align-items: center;
+    gap: 15px;
+}
+.headerContainer img {
+    filter: grayscale(1);
+}
+.headerContainer:hover img {
+    filter: grayscale(0);
+    transition: 0.3s all ease;
+}
+.theme-toggler{
+    margin-right: 0;
+    float: right;
+    color: var(--textSecondary);
+}

@@ -3,7 +3,6 @@
 }
 .nav-links {
     display: flex;
-    padding-left: 0;
     margin: 0;
     font-size: 0.9rem;
     gap: 2rem
@@ -16,10 +15,7 @@
     font-size: 1.8rem;
 }
 .headerContainer {
-    display: flex;
     margin: 3rem 0;
-    align-items: center;
-    gap: 15px;
 }
 .headerContainer img {
     filter: grayscale(1);

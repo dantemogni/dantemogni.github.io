@@ -56,7 +56,7 @@ const Layout = ({ pageTitle, children }) => {
                 </div>
             </section>
             <div className="row">
-                <main className="col col-12 col-sm-9 col-md-7"> 
+                <main className="col col-12 col-sm-10 col-md-9"> 
                     <h3 className={styles.heading}>{pageTitle}</h3>
                     {children}
                 </main> 

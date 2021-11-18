@@ -60,6 +60,9 @@ body.dark {
 .pd-0 {
     padding:0;
 }
+.mg-0{
+    margin: 0;
+}
 .no-decoration a{
     text-decoration: none;
 }

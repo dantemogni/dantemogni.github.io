@@ -1,11 +1,5 @@
-
-.container {
-    margin: auto;
-    max-width: 700px;
-}
 .heading {
     color: var(--textLink);
-    font-size: 1.5rem;
 }
 .nav-links {
     display: flex;
@@ -35,7 +29,5 @@
     transition: 0.3s all ease;
 }
 .theme-toggler{
-    margin-right: 0;
-    float: right;
     color: var(--textSecondary);
 }

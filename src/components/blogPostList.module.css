@@ -11,7 +11,16 @@
 }
 .date-post{
     color: var(--textSecondary);
+    text-transform: lowercase;
 }
 .heading {
     color: var(--textLink);
+}
+.tag-post {
+    color: var(--textSecondary);
+    text-transform: lowercase;
+    font-size: 0.7rem;
+    border-radius: 15px;
+    border: 1px solid var(--textSecondary);
+    padding: 3px 10px;
 }

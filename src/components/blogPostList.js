@@ -12,6 +12,7 @@ const BlogPostList = ({max, pageTitle}) => {
             frontmatter {
               date (formatString: "MMMM D, YYYY") 
               title
+              tags
             }
             id
             slug
@@ -38,6 +39,7 @@ const BlogPostList = ({max, pageTitle}) => {
                           {node.frontmatter.title}
                         </Link>
                       </h2>
+                      <span className={`italic ${styles.tagPost}`}>{node.frontmatter.tags}</span>
                   </article>
               ))
             }

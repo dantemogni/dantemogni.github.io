@@ -1,4 +1,5 @@
 import * as React from "react"
+import Grade from "grade-js"
 import { StaticImage } from "gatsby-plugin-image"
 
 const projectsOverview = ({pageTitle}) => {
@@ -31,5 +32,8 @@ const projectsOverview = ({pageTitle}) => {
         </section>
     )
 }
+window.addEventListener('load', function(){
+    Grade(document.querySelectorAll('.gradient-wrap'))
+})
 
 export default projectsOverview

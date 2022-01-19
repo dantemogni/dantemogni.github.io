@@ -17,12 +17,13 @@ ul {
 .projectDetails {
     display: flex;
     align-items: center;
+    flex-wrap: wrap-reverse;
 }
 .itemTitle{
-    flex: 1 1 95%;
+    flex: 1 1 70%;
 }
 .itemImage {
-    flex: 1 1 35%;
+    flex: 1 1 30%;
 }
 .caption {
     width: 100%;
@@ -35,4 +36,21 @@ ul {
     border-radius: 15px;
     border: 1px solid var(--textSecondary);
     padding: 3px 10px;
+}
+
+@media only screen and (max-width: 765px) {
+    .itemTitle{
+        flex: 1 1 100%;
+    }
+    .itemImage {
+        flex: 1 1 100%;
+        margin-bottom: 15px;
+        text-align: center;
+    }
+    .itemImage img{
+        border-radius: 8px;
+    }
+    .tagList{
+        justify-content: center;
+    }
 }

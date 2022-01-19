@@ -18,9 +18,9 @@ const projectsPostList = ({pageTitle}) => {
                             </ul>
 
                             <h3># TODO webapp</h3>
-                            <caption className={styles.caption}>
+                            <p className={styles.caption}>
                                 Free online ToDo utility built using Spring Boot Framework.
-                            </caption>
+                            </p>
                             <br/>
                             <a href="https://todoapp-dante.herokuapp.com/" rel="noreferrer"  target={"_blank"}>Go to site</a>
                         </div>
@@ -38,9 +38,9 @@ const projectsPostList = ({pageTitle}) => {
                                 <li className={`italic ${styles.tagPost}`}>Javascript</li>
                             </ul>
                             <h3># Pomodoro</h3>
-                            <caption className={styles.caption}>
+                            <p className={styles.caption}>
                                 Simple yet useful Pomodoro web app. 
-                            </caption>
+                            </p>
                             <br/>
                             <a href="https://pomodoro-dante.netlify.app/" rel="noreferrer"  target={"_blank"}>Go to site</a>
                         </div>
@@ -58,9 +58,9 @@ const projectsPostList = ({pageTitle}) => {
                             </ul>
 
                             <h3># Estudio Mogni</h3>
-                            <caption className={styles.caption}>
+                            <p className={styles.caption}>
                                 Landing Page for 'Estudio Mogni' 
-                            </caption>
+                            </p>
                             <br/>
                             <a href="https://estudiomogni.com.ar/" rel="noreferrer" target={"_blank"}>Go to site</a>
                         </div>

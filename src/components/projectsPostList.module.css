@@ -1,12 +1,28 @@
+ul {
+    list-style: none;
+}
+.tagList{
+    display: flex;
+    margin: 0;
+    flex-wrap: wrap;
+    gap: 5px;
+    padding: 0;
+}
+
 .itemProject{
-    border: 1px var(--textSecondary) solid;
+    border: 1px var(--textSecondary) dotted;
+    border-radius: 10px;
     padding: 20px;
 }
 .projectDetails {
     display: flex;
+    align-items: center;
 }
 .itemTitle{
-    flex: 1 1 100%;
+    flex: 1 1 95%;
+}
+.itemImage {
+    flex: 1 1 35%;
 }
 .caption {
     width: 100%;
@@ -19,5 +35,4 @@
     border-radius: 15px;
     border: 1px solid var(--textSecondary);
     padding: 3px 10px;
-    margin-right: 10px;
 }

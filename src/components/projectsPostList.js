@@ -9,18 +9,20 @@ const projectsPostList = ({pageTitle}) => {
                 <div className={`col col-12 ${styles.itemProject}`}>
                     <div className={styles.projectDetails}>
                         <div className={`itemTitle ${styles.itemTitle}`}>
-                            <span className={`italic ${styles.tagPost}`}>Java</span>
-                            <span className={`italic ${styles.tagPost}`}>Spring Boot</span>
-                            <span className={`italic ${styles.tagPost}`}>PostgreSQL</span>
-                            <span className={`italic ${styles.tagPost}`}>fullstack</span>
-                            <span className={`italic ${styles.tagPost}`}>Bootstrap</span>
+                            <ul className={styles.tagList}>
+                                <li className={`italic ${styles.tagPost}`}>Java</li>
+                                <li className={`italic ${styles.tagPost}`}>Spring Boot</li>
+                                <li className={`italic ${styles.tagPost}`}>PostgreSQL</li>
+                                <li className={`italic ${styles.tagPost}`}>fullstack</li>
+                                <li className={`italic ${styles.tagPost}`}>Bootstrap</li>
+                            </ul>
 
                             <h3># TODO webapp</h3>
                             <caption className={styles.caption}>
                                 Free online ToDo utility built using Spring Boot Framework.
                             </caption>
                             <br/>
-                            <a href="https://todoapp-dante.herokuapp.com/"  target={"_blank"}>Go to site</a>
+                            <a href="https://todoapp-dante.herokuapp.com/" rel="noreferrer"  target={"_blank"}>Go to site</a>
                         </div>
                         <div className={styles.itemImage}>
                             <StaticImage src="../images/todoapp.jpg" width={250} placeholder="blurred" />
@@ -30,16 +32,17 @@ const projectsPostList = ({pageTitle}) => {
                 <div className={`col col-12 ${styles.itemProject}`}>
                     <div className={styles.projectDetails}>
                         <div className={`itemTitle ${styles.itemTitle}`}>
-                            <span className={`italic ${styles.tagPost}`}>Vue.js</span>
-                            <span className={`italic ${styles.tagPost}`}>Frontend</span>
-                            <span className={`italic ${styles.tagPost}`}>Javascript</span>
-
+                            <ul className={styles.tagList}>
+                                <li className={`italic ${styles.tagPost}`}>Vue.js</li>
+                                <li className={`italic ${styles.tagPost}`}>Frontend</li>
+                                <li className={`italic ${styles.tagPost}`}>Javascript</li>
+                            </ul>
                             <h3># Pomodoro</h3>
                             <caption className={styles.caption}>
                                 Simple yet useful Pomodoro web app. 
                             </caption>
                             <br/>
-                            <a href="https://pomodoro-dante.netlify.app/"  target={"_blank"}>Go to site</a>
+                            <a href="https://pomodoro-dante.netlify.app/" rel="noreferrer"  target={"_blank"}>Go to site</a>
                         </div>
                         <div className={styles.itemImage}>
                             <StaticImage src="../images/pomodoro.jpg" width={250} placeholder="blurred"/>
@@ -49,15 +52,17 @@ const projectsPostList = ({pageTitle}) => {
                 <div className={`col col-12  ${styles.itemProject}`}>
                     <div className={styles.projectDetails}>
                         <div className={`itemTitle ${styles.itemTitle}`}>
-                            <span className={`italic ${styles.tagPost}`}>Landing Page</span>
-                            <span className={`italic ${styles.tagPost}`}>HTML</span>
+                            <ul className={styles.tagList}>
+                                <li className={`italic ${styles.tagPost}`}>Landing Page</li>
+                                <li className={`italic ${styles.tagPost}`}>HTML</li>
+                            </ul>
 
                             <h3># Estudio Mogni</h3>
                             <caption className={styles.caption}>
                                 Landing Page for 'Estudio Mogni' 
                             </caption>
                             <br/>
-                            <a href="https://estudiomogni.com.ar/" target={"_blank"}>Go to site</a>
+                            <a href="https://estudiomogni.com.ar/" rel="noreferrer" target={"_blank"}>Go to site</a>
                         </div>
                         <div className={styles.itemImage}>
                             <StaticImage src="../images/promo-web.jpg" width={250} placeholder="blurred" />

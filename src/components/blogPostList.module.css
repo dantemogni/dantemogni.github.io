@@ -17,6 +17,7 @@
     color: var(--textLink);
 }
 .tag-post {
+    text-overflow: clip;
     color: var(--textSecondary);
     text-transform: lowercase;
     font-size: 0.7rem;

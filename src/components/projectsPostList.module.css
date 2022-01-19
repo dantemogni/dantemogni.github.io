@@ -1,0 +1,23 @@
+.itemProject{
+    border: 1px var(--textSecondary) solid;
+    padding: 20px;
+}
+.projectDetails {
+    display: flex;
+}
+.itemTitle{
+    flex: 1 1 100%;
+}
+.caption {
+    width: 100%;
+    text-align: left;
+}
+.tag-post {
+    color: var(--textSecondary);
+    text-transform: lowercase;
+    font-size: 0.7rem;
+    border-radius: 15px;
+    border: 1px solid var(--textSecondary);
+    padding: 3px 10px;
+    margin-right: 10px;
+}

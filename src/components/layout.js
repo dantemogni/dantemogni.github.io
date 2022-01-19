@@ -3,6 +3,7 @@ import { Link, useStaticQuery, graphql } from "gatsby"
 import * as styles from "./layout.module.css"
 import { StaticImage } from "gatsby-plugin-image"
 import { ThemeToggler } from "gatsby-plugin-dark-mode";
+import downloadCV from '../downloads/CV-DanteMogni.pdf' 
 import "../css/bootstrap-grid.css"
 
 const Layout = ({ pageTitle, children }) => {
@@ -34,7 +35,7 @@ const Layout = ({ pageTitle, children }) => {
                             <li><Link to ="/" activeClassName={styles.navLinkTextActive}>Home</Link></li>
                             <li><Link to="/blog/" activeClassName={styles.navLinkTextActive}>Blog</Link></li>
                             <li><Link to="/projects/" activeClassName={styles.navLinkTextActive}>Projects</Link></li>
-                            <li><Link to="/cv/" activeClassName={styles.navLinkTextActive}>CV</Link></li>
+                            <li><a href={downloadCV} download>CV</a></li>
                         </ul>
                     </nav>
                 </div>

@@ -63,6 +63,18 @@ body.dark {
 .mg-0{
     margin: 0;
 }
+.g-5 {
+    gap:5px;
+}
+.g-10{
+    gap:10px;
+}
+.g-15{
+    gap: 15px;
+}
+.g-20{
+    gap: 20px;
+}
 .no-decoration a{
     text-decoration: none;
 }

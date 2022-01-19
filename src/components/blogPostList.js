@@ -7,10 +7,14 @@ const BlogPostList = ({max, pageTitle}) => {
 
     const data = useStaticQuery(graphql`
     query {
-        allMdx(sort: {fields: frontmatter___date, order: DESC}) {
-          nodes {
+      allFile(
+        filter: {sourceInstanceName: {eq: "blog"}}
+        sort: {fields: childrenMdx___frontmatter___date, order: DESC}
+      ) {
+        nodes {
+          childMdx {
             frontmatter {
-              date (formatString: "MMMM D, YYYY") 
+              date(formatString: "MMMM D, YYYY")
               title
               tags
             }
@@ -19,9 +23,10 @@ const BlogPostList = ({max, pageTitle}) => {
           }
         }
       }
+    }
     `)
 
-    let nodes =  data.allMdx.nodes
+    var nodes =  data.allFile.nodes.filter(node => node.childMdx != null)
 
     if(max !== null) {
         nodes =  nodes.slice(0, max)
@@ -31,17 +36,18 @@ const BlogPostList = ({max, pageTitle}) => {
         <section>
             <h3 className={styles.heading}>{pageTitle}</h3>
             {
-                nodes.map((node) => (
-                  <article className={styles.postContainer} key={node.id}>
-                    <span className={`italic ${styles.datePost}`}>{node.frontmatter.date}</span>
-                      <h2 class="mg-0">
-                        <Link className={styles.blogPostHeading} to={`/blog/${node.slug}`}>
-                          {node.frontmatter.title}
-                        </Link>
-                      </h2>
-                      <span className={`italic ${styles.tagPost}`}>{node.frontmatter.tags}</span>
-                  </article>
-              ))
+              nodes.length === 0 ? <p>No blog posts yet</p> :
+              nodes.map((node) => (
+                <article className={styles.postContainer} key={node.childMdx.id}>
+                <span className={`italic ${styles.datePost}`}>{node.childMdx.frontmatter.date}</span>
+                  <h2 class="mg-0">
+                    <Link className={styles.blogPostHeading} to={`/blog/${node.childMdx.slug}`}>
+                      {node.childMdx.frontmatter.title}
+                    </Link>
+                  </h2>
+                  <span className={`italic ${styles.tagPost}`}>{node.childMdx.frontmatter.tags}</span>
+              </article>
+            ))
             }
         </section>
     )
